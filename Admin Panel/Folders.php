@@ -12,9 +12,8 @@
         <?php include 'Master.html';?>
     </head>
 
+
     
-
-
 <style type="text/css">
 body{
 margin-top:20px;
