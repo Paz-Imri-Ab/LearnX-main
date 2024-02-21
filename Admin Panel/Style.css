@@ -1,0 +1,305 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'OS Luizi Round_FFC';
+}
+body, html {
+  background-color: #f0f0f0;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+#menu{
+  background: rgba(4, 52, 69, 0.763);
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+#menu .logo {
+  display: flex; /* Enables Flexbox */
+  justify-content: center; /* Horizontally centers the child elements */
+  align-items: center; /* Vertically centers the child elements */
+  border-bottom: 1px solid white;
+}
+#menu .logo .pic{
+  height: 60px;
+  width: 85px;
+}
+
+#page-title{
+  font-family: 'Rubik Lines';
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+#menu .items{
+  margin-top: 40px;
+}
+#menu .items li {
+  list-style: none;
+  padding: 15px 0;
+  transition: background-color 0.3s ease;
+}
+
+#menu .items li i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: gray;
+  margin: 0 10px 0 25px;
+  font-size: 14px;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+#menu .items li a {
+  text-decoration: none;
+  color: gray;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  font-family: 'Simple CLM';
+}
+#menu .items li:hover {
+  background-color: rgba(205,213,233,0.2);
+  cursor: pointer;
+}
+#menu .items li:hover i{
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+#menu .items li:hover a{
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+#menu .items li:nth-child(1){
+  border-right: 4px solid white;
+}
+
+
+#interface {
+  width: calc(100% - 400px);
+  position: relative;
+  margin-right: 400px;
+}
+.interface-title {
+  position: absolute;
+  left: 500px; /* Adjust the left distance according to your preference */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #264853;
+  font-size: xx-large;
+}
+
+#interface .navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 15px 30px;
+  border-bottom: 3px solid #264853;
+  position: fixed;
+  width: calc(100% - 400px);
+}
+#interface .navigation .search{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+}
+#interface .navigation .search i{
+  margin-left: 14px;
+}
+#interface .navigation .search input{
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+#interface .navigation .profile{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#interface .navigation .profile i{
+  margin-right: 20px;
+  font-size: 19px;
+  font-weight: 400;
+}
+#interface .navigation .profile img{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.n1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#menu-btn{
+  display: none;
+  color: #2b2b2b;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.i-name{
+  color:#264853;
+  padding: 30px 30px 0 30px;
+  font-weight: 700;
+  margin-top: 70px;
+  font-family: 'Rubik Lines';
+  font-size: xx-large;
+}
+.values{
+  padding: 30px 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-top: 70px;
+}
+.values .val-box{
+  background: #F9FAFB;
+  width: 235px;
+  padding: 16px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.values .val-box .num{
+  text-align: center;
+}
+.values .val-box .card-title{
+  margin-left: 10px;
+}
+.values .val-box i{
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 15px;
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+}
+.values .val-box:nth-child(1) i{
+  background: cyan;
+}
+.values .val-box:nth-child(2) i{
+  background: darkorchid;
+}
+.values .val-box:nth-child(3) i{
+  background: coral;
+}
+.values .val-box:nth-child(4) i{
+  background: deeppink;
+}
+.values .val-box h3{
+  font-weight: 700;
+  font-size: xx-large;
+}
+.values .val-box span{
+  color: darkgray;
+  font-weight: 700;
+  font-size: x-large;
+}
+.board{
+  width: 95%;
+  margin: 50px 30px 0px 0px;
+  overflow: auto;
+  background: #F9FAFB;
+  border-radius: 8px;
+}
+
+
+
+@media (max-width: 769px) {
+  #menu{
+    width: 270px;
+    height: 100%;
+    position: fixed;
+    right: -270px;
+    transition: 0.3s ease;
+  }
+  #menu-btn{
+    display: initial;
+  }
+  #menu.active{
+    right: 0px;
+  }
+  #interface {
+    width: 100%;
+    margin-right: 0px;
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+  #menu.active~ #interface{
+    width: calc(100%-270px);
+    margin-right: 270px;
+    transition: 0.3s ease;
+  }
+  #interface .navigation{
+    width: 100%;
+  }
+  .values{
+    padding: 30px 30px 0 30px;
+    justify-content: flex-start;
+  }
+  .values .val-box{
+    padding: 16px 20px;
+    margin: 10px 20px 10px 0;
+  }
+  .board{
+    width: 90%;
+    padding: 0;
+    overflow-x: auto;
+  }
+  .table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+}
+@media (max-width:447px) {
+  #interface .navigation{
+    padding: 15px;
+  }
+  #interface .navigation .search input{
+    width: 150px;
+  }
+  .i-name{
+    padding: 30px 15px 0 15px;
+  }
+  .values{
+    padding: 15px 15px 0 15px;
+  }
+  .values .val-box{
+    width: 100%;
+    margin: 8px 0;
+  }
+  .board{
+    margin: 30px 15px 30px 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

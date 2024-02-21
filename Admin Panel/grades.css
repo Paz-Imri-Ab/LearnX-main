@@ -1,0 +1,81 @@
+.table {
+  width: 70%;
+  margin-top: 20px;
+  direction: rtl; /* Right to left text direction for Hebrew */
+  margin-top: 50px;
+  margin-right: 20px;
+  overflow-x: auto; /* Allows horizontal scrolling if the table is too wide */
+  display: block;
+}
+
+#courses {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* More subtle shadow */
+}
+
+#courses th, #courses td {
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+#courses th {
+  border-bottom: 1px solid white; /* Thicker bottom border for header */
+  background-color: cadetblue; /* Slightly different background for header */
+  color: white;
+}
+
+
+#courses tr:hover {
+  background-color: #eef0f3; /* Hover effect for rows */
+}
+.calculate-gpa-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Keeps the button centered */
+  position: relative; /* Necessary for the absolute positioning of the GPA result */
+  padding: 10px;
+  width: 100%; /* Ensures the container takes full width */
+}
+
+#gpaResult {
+  position: absolute; /* Allows precise positioning relative to the container */
+  top: 50%; /* Aligns the top of the element at the center vertically */
+  transform: translateY(-50%) translateX(-100%); /* Moves it up to center vertically and left by its own width */
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: none; /* Initially hidden, shown via JS */
+  color: green;
+  font-weight: 700;
+  right: calc(50% + 20px); /* Half of the container's width plus half of the button's width to move it left */
+}
+
+
+.delete a{
+  color: red;
+}
+
+#addCourseBtn 
+{
+  background-color: cadetblue; /* You can choose your desired background color */
+  color: #fff; /* Text color for better contrast */
+  padding: 10px 20px; /* Adjust padding for better appearance */
+  border: none; /* Remove border if not needed */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  cursor: pointer;
+  margin-top: 10px; /* Adjust the margin-top value to add space */
+}
+
+.form-group 
+{
+  margin-bottom: 20px; /* Adjust the margin-bottom value to add space */
+}
+
+#addCourseBtn:hover
+ {
+  background-color: rgb(183, 237, 238); /* Change background color on hover */
+}

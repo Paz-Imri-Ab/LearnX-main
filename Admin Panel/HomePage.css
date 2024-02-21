@@ -1,0 +1,68 @@
+
+.interface {
+    position: relative; /* This makes the positioning of child elements relative to this container */
+    /* Other styling for the container, if necessary */
+}
+
+/* Adjust the positioning of the add button */
+.add-assignment {
+    position: absolute;
+    top: 50%; /* Start with 50% to center vertically, then adjust as needed */
+    left: 70px; /* Adjust this as needed to align with the design */
+    z-index: 10; /* Ensure the button is above other elements */
+    transform: translateY(-200%); /* Adjusts the position to truly center based on the button's height */
+}
+
+.add-assignment-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px; /* Or whatever the button width should be */
+    height: 70px; /* Or whatever the button height should be */
+    background-color: cadetblue; /* Or any other color */
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+
+.add-assignment-btn i {
+    font-size: 30px;
+}
+
+#tasks{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  #tasks tr{
+    border-bottom: 1px solid #eef0f3;
+  }
+  #tasks thead td{
+    background: #F9FAFB;
+    text-align: start;
+    padding: 15px;
+    color: #264853;
+    font-family: 'Simple CLM';
+    font-size: xx-large;
+  }
+  #tasks tbody tr td{
+    padding: 10px 15px;
+    font-size: x-large;
+  }
+  .active p{
+    background: #d7fada;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    color: #2b2b2b;
+  }
+  .edit a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #554cd1;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: x-large;
+  }
