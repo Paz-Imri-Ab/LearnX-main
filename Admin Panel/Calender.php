@@ -8,6 +8,7 @@
     <?php include 'Master.html'; ?>
     <title>לוח אירועים</title>
 </head>
+
 <body>
     <h3 class="i-name">לוח אירועים</h3>
     <div class="board">
