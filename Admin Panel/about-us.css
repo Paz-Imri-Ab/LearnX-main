@@ -1,0 +1,8 @@
+/* about-us.css */
+
+/* Style the h1 element within .main-heading-container */
+.main-heading-container h3 {
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+}

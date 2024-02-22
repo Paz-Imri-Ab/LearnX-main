@@ -1,0 +1,68 @@
+.row-container {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Space between the elements */
+}
+
+.add-assignment-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px; /* Or whatever the button width should be */
+  height: 70px; /* Or whatever the button height should be */
+  background-color: cadetblue; /* Or any other color */
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.add-assignment-btn i {
+  font-size: 30px;
+}
+
+
+.add-assignment-btn i {
+    font-size: 30px;
+}
+
+#tasks{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  #tasks tr{
+    border-bottom: 1px solid #eef0f3;
+  }
+  #tasks thead td{
+    background: #F9FAFB;
+    text-align: start;
+    padding: 15px;
+    color: #264853;
+    font-family: 'Simple CLM';
+    font-weight: bold;
+  }
+  #tasks tbody tr td{
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #264853;
+  }
+  #tasks tbody tr td p{
+    padding: 10px 15px;
+    color: gray;
+  }
+  .active p{
+    background: #d7fada;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    color: #2b2b2b;
+  }
+  .edit a{
+    text-decoration: none;
+    color: #3b76e1;
+    font-weight: 600;
+    cursor: pointer;
+  }
