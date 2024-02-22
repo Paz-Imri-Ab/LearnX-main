@@ -5,6 +5,7 @@
     background: #F9FAFB;
     border-radius: 8px;
 }
+<<<<<<< HEAD
 .row-container {
     display: flex;
     align-items: center; /* Align items vertically in the center */
@@ -30,6 +31,8 @@
 .add-assignment-btn i {
     font-size: 30px;
 }
+=======
+>>>>>>> origin/main
 
 #table-container {
     width: 90%; /* Set to 90% of .board's width */
@@ -51,8 +54,13 @@
 }
 
 .table th, .table td {
+<<<<<<< HEAD
     padding: 1.5rem; /* Increased padding */
     font-family: 'Simple CLM';
+=======
+    font-size: 16px; /* Larger font size */
+    padding: 1.5rem; /* Increased padding */
+>>>>>>> origin/main
 }
 
 /* Increase cell padding */
@@ -106,6 +114,10 @@ a {
     background-color: #3b76e1;
     color: #fff;
     display: flex;
+<<<<<<< HEAD
+=======
+    font-weight: 500;
+>>>>>>> origin/main
     height: 100%;
     justify-content: center;
     width: 100%;
@@ -118,8 +130,19 @@ a {
     padding-right: 20px;
 }
 
+<<<<<<< HEAD
 .__cf_email__{
     font-family: 'Comic Sans MS';
+=======
+
+.btn.btn-primary {
+    background-color: cadetblue;
+    border-color: cadetblue;
+}
+
+.btn.btn-primary:hover {
+    background-color:rgb(183, 237, 238);
+>>>>>>> origin/main
 }
 
 .pagination-container .page-item.active .page-link {

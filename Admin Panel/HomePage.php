@@ -12,6 +12,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <div class="row-container">
         <h3 class="i-name">קהילת מטלות</h3>
 
@@ -63,6 +64,59 @@
                 </table>
             </div>
         </div>
+=======
+    <div class = "interface">
+    <h3 class="i-name">קהילת מטלות</h3>
+    <div class="add-assignment">
+    <a href="#" class="add-assignment-btn">
+        <i class="fas fa-plus"></i>
+    </a>
+</div>
+<div>
+    <div class="board">
+
+        <table id="tasks">
+            <thead>
+                <tr>
+                    <td>קורס</td>
+                    <td>שם המטלה</td>
+                    <td>תאריך הגשה</td>
+                    <td>סטאטוס</td>
+                    <td>שותפים</td>
+                    <td>מייל מרצה</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="course">
+                        <h4>פייתון</h4>
+                    </td>
+                    <td class="task-name">
+                        <h4>מטלה 1</h4>
+                        <p>משתנים</p>
+                    </td>
+                    <td class="date">
+                        <h4>23.04.2024</h4>
+                        <p>נשארו עוד 7 ימים להגשה</p>
+                    </td>
+                    <td class="active">
+                        <p>פעיל</p>
+                    </td>
+                    <td class="partners">
+                        <p>יסמין טייכנר</p>
+                        <p>פז אביטבול</p>
+                    </td>
+                    <td class="lec-mail">
+                        <h4>Example@gmail.com</h4>
+                        <p>רז נאות</p>
+                    </td>
+                    <td class="edit"><a href="" #>עריכה</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+>>>>>>> origin/main
     </div>
 
 </body>

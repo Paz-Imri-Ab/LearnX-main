@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'OS Luizi Round_FFC';
+<<<<<<< HEAD
   font-size: 1.3rem;
+=======
+>>>>>>> origin/main
 }
 body, html {
   background-color: #f0f0f0;
@@ -13,19 +16,30 @@ body, html {
 }
 
 #menu{
+<<<<<<< HEAD
   background: cadetblue;
+=======
+  background: rgba(4, 52, 69, 0.763);
+>>>>>>> origin/main
   width: 400px;
   height: 100%;
   position: fixed;
   top: 0;
   right: 0;
+<<<<<<< HEAD
   background: linear-gradient(to bottom, #1eb4b6, #264853);
+=======
+>>>>>>> origin/main
 }
 #menu .logo {
   display: flex; /* Enables Flexbox */
   justify-content: center; /* Horizontally centers the child elements */
   align-items: center; /* Vertically centers the child elements */
+<<<<<<< HEAD
   background: #1d3b48;
+=======
+  border-bottom: 1px solid white;
+>>>>>>> origin/main
 }
 #menu .logo .pic{
   height: 60px;
@@ -36,8 +50,12 @@ body, html {
   font-family: 'Rubik Lines';
   color: white;
   text-align: center;
+<<<<<<< HEAD
   margin-top: 19px;
   padding-left: 20px;
+=======
+  margin-top: 5px;
+>>>>>>> origin/main
 }
 #menu .items{
   margin-top: 40px;
@@ -53,17 +71,29 @@ body, html {
   height: 30px;
   line-height: 30px;
   text-align: center;
+<<<<<<< HEAD
   color: lightgray;
   margin: 0 10px 0 25px;
+=======
+  color: gray;
+  margin: 0 10px 0 25px;
+  font-size: 14px;
+>>>>>>> origin/main
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 #menu .items li a {
   text-decoration: none;
+<<<<<<< HEAD
   color: lightgray;
   transition: color 0.3s ease, font-weight 0.3s ease;
   font-family: 'OS Luizi Round_FFC';
   font-size: 1.2rem;
+=======
+  color: gray;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  font-family: 'Simple CLM';
+>>>>>>> origin/main
 }
 #menu .items li:hover {
   background-color: rgba(205,213,233,0.2);
@@ -91,18 +121,27 @@ body, html {
 }
 .interface-title {
   position: absolute;
+<<<<<<< HEAD
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
   font-size: 1.4rem;
+=======
+  left: 500px; /* Adjust the left distance according to your preference */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #264853;
+  font-size: xx-large;
+>>>>>>> origin/main
 }
 
 #interface .navigation{
   display: flex;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
   padding: 15px 30px;
   position: fixed;
   width: calc(100% - 400px);
@@ -110,17 +149,47 @@ body, html {
   height: 79px;
 }
 
+=======
+  background: white;
+  padding: 15px 30px;
+  border-bottom: 3px solid #264853;
+  position: fixed;
+  width: calc(100% - 400px);
+}
+#interface .navigation .search{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+}
+#interface .navigation .search i{
+  margin-left: 14px;
+}
+#interface .navigation .search input{
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+>>>>>>> origin/main
 #interface .navigation .profile{
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 #interface .navigation .profile i{
+<<<<<<< HEAD
   margin-right: 50px;
   font-size: 30px;
   font-weight: 400;
   color: white;
   margin-left: 50px;
+=======
+  margin-right: 20px;
+  font-size: 19px;
+  font-weight: 400;
+>>>>>>> origin/main
 }
 #interface .navigation .profile img{
   width: 30px;
@@ -146,9 +215,15 @@ body, html {
   font-weight: 700;
   margin-top: 70px;
   font-family: 'Rubik Lines';
+<<<<<<< HEAD
   font-size: 1.5rem;
 }
 .values {
+=======
+  font-size: xx-large;
+}
+.values{
+>>>>>>> origin/main
   padding: 30px 30px 0 30px;
   display: flex;
   justify-content: space-between;
@@ -157,18 +232,27 @@ body, html {
   width: 95%;
   margin-top: 70px;
 }
+<<<<<<< HEAD
 
 .values .val-box {
   background: #F9FAFB;
   min-width: 235px; /* Minimum width of the box */
   max-width: 100%; /* Maximum width to allow wrapping */
+=======
+.values .val-box{
+  background: #F9FAFB;
+  width: 235px;
+>>>>>>> origin/main
   padding: 16px 20px;
   border-radius: 5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 .values .val-box .num{
   text-align: center;
 }
@@ -176,6 +260,10 @@ body, html {
   margin-left: 10px;
 }
 .values .val-box i{
+<<<<<<< HEAD
+=======
+  font-size: 25px;
+>>>>>>> origin/main
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -199,10 +287,20 @@ body, html {
   background: deeppink;
 }
 .values .val-box h3{
+<<<<<<< HEAD
   color: #264853;
 }
 .values .val-box span{
   color: gray;
+=======
+  font-weight: 700;
+  font-size: xx-large;
+}
+.values .val-box span{
+  color: darkgray;
+  font-weight: 700;
+  font-size: x-large;
+>>>>>>> origin/main
 }
 .board{
   width: 95%;

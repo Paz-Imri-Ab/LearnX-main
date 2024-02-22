@@ -12,9 +12,14 @@
         <?php include 'Master.html';?>
     </head>
 
+<<<<<<< HEAD
     
 
 
+=======
+
+    
+>>>>>>> origin/main
 <style type="text/css">
 body{
 margin-top:20px;
@@ -108,14 +113,24 @@ background-color: #f7f7ff;
 }
 
 .d-grid a.btn.btn-primary {
+<<<<<<< HEAD
     background-color: cadetblue; 
     color: #fff;
     border: 1px rgb(171, 184, 185) ; 
+=======
+    background-color: cadetblue; /* Red color */
+    color: #fff;
+    border: 1px solid cadetblue; /* Red color */
+>>>>>>> origin/main
 }
 
 .d-grid a.btn.btn-primary:hover
 {
+<<<<<<< HEAD
     background-color:rgb(171, 184, 185);
+=======
+    background-color:rgb(183, 237, 238);
+>>>>>>> origin/main
 }
 
 .font-30.text-primary i 
@@ -128,10 +143,13 @@ background-color: #f7f7ff;
 }
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> origin/main
 </style>
 </head>
 <body>

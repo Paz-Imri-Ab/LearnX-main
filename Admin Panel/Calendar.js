@@ -63,6 +63,7 @@ function deleteEvent(eventId) {
 	}
 }
 
+<<<<<<< HEAD
 // Function to edit events
 function editEvent(eventId) {
     let eventIndex = events.findIndex(event => event.id === eventId);
@@ -102,10 +103,32 @@ function displayReminders() {
             let eventDate = new Date(event.date);
 
             if (eventDate.getMonth() === currentMonth && eventDate.getFullYear() === currentYear) {
+=======
+// Function to display reminders
+// Function to display reminders in a table
+function displayReminders() {
+    // Get the table where reminders will be displayed
+    let remindersTable = document.getElementById("remindersTable");
+    let remindersTableBody = document.getElementById("remindersTableBody");
+    
+    // Clear the existing rows
+    remindersTableBody.innerHTML = "";
+    
+    if (events.length > 0) {
+        // Make the table headers visible
+        remindersTable.style.display = "table";
+        
+        for (let i = 0; i < events.length; i++) {
+            let event = events[i];
+            let eventDate = new Date(event.date);
+            if (eventDate.getMonth() === currentMonth && eventDate.getFullYear() === currentYear) {
+                // Create a new row and cells for the event data
+>>>>>>> origin/main
                 let row = remindersTableBody.insertRow();
                 let titleCell = row.insertCell(0);
                 let descriptionCell = row.insertCell(1);
                 let dateCell = row.insertCell(2);
+<<<<<<< HEAD
                 let editCell = row.insertCell(3);
                 let deleteCell = row.insertCell(4);
 
@@ -123,22 +146,44 @@ function displayReminders() {
                 editCell.appendChild(editButton);
 
 				let deleteButton = document.createElement("button");
+=======
+                let deleteCell = row.insertCell(3);
+
+                // Fill cells with event data
+                titleCell.textContent = event.title;
+                descriptionCell.textContent = event.description;
+				let timeOptions = { hour: '2-digit', minute: '2-digit' };
+				dateCell.textContent = eventDate.toLocaleDateString() + ' ' + eventDate.toLocaleTimeString('he-IL', timeOptions);
+
+                // Add a delete button for the event
+                let deleteButton = document.createElement("button");
+>>>>>>> origin/main
                 deleteButton.className = "delete-event";
                 deleteButton.textContent = "מחק";
                 deleteButton.onclick = function () {
                     deleteEvent(event.id);
                 };
                 deleteCell.appendChild(deleteButton);
+<<<<<<< HEAD
 
                 
             }
         }
     } else {
+=======
+            }
+        }
+    } else {
+        // Hide the table headers if there are no events
+>>>>>>> origin/main
         remindersTable.style.display = "none";
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 // Function to generate a range of 
 // years for the year select input
 function generate_year_range(start, end) {
